@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片 - 第一影视</title>
+  <meta name="description" content="第一影视全站影片搜索，覆盖电影、剧集、动漫、综艺与超清影视资源。">
+  <meta name="keywords" content="亚洲电影,资源,免费在线观看,视频,超清影视,大全,片库,高清">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-shell">
+    <a class="brand" href="./index.html" aria-label="第一影视首页">
+      <span class="brand-mark">▶</span>
+      <span class="brand-name">第一影视</span>
+    </a>
+    <div class="desktop-nav">
+      <a class="" href="./index.html">首页</a>
+      <a class="" href="./categories.html">分类总览</a>
+      <div class="nav-dropdown">
+        <button type="button" class="">分类</button>
+        <div class="dropdown-menu">
+              <a href="./category-asian-cinema.html">亚洲电影</a>
+              <a href="./category-hot-series.html">热门剧集</a>
+              <a href="./category-action-suspense.html">动作悬疑</a>
+              <a href="./category-romance-drama.html">爱情剧情</a>
+              <a href="./category-comedy-fantasy.html">喜剧奇幻</a>
+              <a href="./category-animation-variety.html">动画综艺</a>
+              <a href="./category-global-cinema.html">欧美影院</a>
+              <a href="./category-ultra-hd-library.html">超清片库</a>
+        </div>
+      </div>
+      <a class="" href="./rankings.html">排行榜</a>
+    </div>
+    <form class="nav-search" data-search-form action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="打开菜单" data-mobile-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类总览</a>
+    <a href="./rankings.html">排行榜</a>
+        <a href="./category-asian-cinema.html">🎞️ 亚洲电影</a>
+        <a href="./category-hot-series.html">📺 热门剧集</a>
+        <a href="./category-action-suspense.html">⚡ 动作悬疑</a>
+        <a href="./category-romance-drama.html">💫 爱情剧情</a>
+        <a href="./category-comedy-fantasy.html">🎭 喜剧奇幻</a>
+        <a href="./category-animation-variety.html">🌈 动画综艺</a>
+        <a href="./category-global-cinema.html">🎥 欧美影院</a>
+        <a href="./category-ultra-hd-library.html">🏆 超清片库</a>
+    <form class="mobile-search" data-search-form action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</nav>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">全站搜索</span>
+      <h1>搜索第一影视片库</h1>
+      <p>整合亚洲各国电影资源，形成系统的影视资料库。提供免费在线观看视频服务，主打超清画质，旨在打造全面的亚洲电影大全。</p>
+      <div class="search-large">
+        <input id="search-page-input" type="search" placeholder="输入影片标题、标签、类型或地区">
+        <button id="search-page-button" type="button" onclick="document.getElementById('search-page-input').dispatchEvent(new Event('input'))">搜索</button>
+      </div>
+    </div>
+  </section>
+  <div class="container main-section">
+    <div class="filter-panel">
+      <select class="filter-select" id="search-page-sort">
+        <option value="views">最多观看</option>
+        <option value="likes">最多点赞</option>
+        <option value="year">最新年份</option>
+        <option value="title">按标题</option>
+      </select>
+      <div class="result-count" id="search-page-count">找到 0 部影片</div>
+    </div>
+    <div class="movie-grid" id="search-results"></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-brand">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">▶</span>
+        <span class="brand-name">第一影视</span>
+      </a>
+      <p>整合亚洲各国电影资源，形成系统的影视资料库。提供免费在线观看视频服务，主打超清画质，旨在打造全面的亚洲电影大全。</p>
+    </div>
+    <div class="footer-links">
+      <h2>快速导航</h2>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./rankings.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </div>
+    <div class="footer-links">
+      <h2>热门分类</h2>
+        <a href="./category-asian-cinema.html">亚洲电影</a>
+        <a href="./category-hot-series.html">热门剧集</a>
+        <a href="./category-action-suspense.html">动作悬疑</a>
+        <a href="./category-romance-drama.html">爱情剧情</a>
+        <a href="./category-comedy-fantasy.html">喜剧奇幻</a>
+        <a href="./category-animation-variety.html">动画综艺</a>
+    </div>
+    <div class="footer-about">
+      <h2>亚洲电影资源</h2>
+      <p>聚合电影、剧集、动漫、综艺与纪录内容，提供清晰的分类、搜索、排行榜和详情页内链。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 第一影视 · 超清影视大全</div>
+</footer>
+<script src="./assets/site.js"></script>
+<script src="./assets/search-data.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

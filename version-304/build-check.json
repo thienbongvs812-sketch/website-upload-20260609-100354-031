@@ -1,0 +1,20 @@
+{
+  "movie_count": 2000,
+  "movie_page_count": 2000,
+  "root_html_count": 2012,
+  "category_page_count": 8,
+  "category_card_total": 2000,
+  "baidu_missing_count": 0,
+  "player_missing_count": 0,
+  "image_files_in_zip_source_count": 0,
+  "category_counts": {
+    "欧美影院": 250,
+    "热门剧集": 250,
+    "动作悬疑": 250,
+    "动画综艺": 250,
+    "爱情剧情": 250,
+    "亚洲电影": 250,
+    "喜剧奇幻": 250,
+    "超清片库": 250
+  }
+}
